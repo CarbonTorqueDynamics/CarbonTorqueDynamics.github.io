@@ -183,34 +183,32 @@
     </footer>
 
     <script>
-        // Simple navigation logic
-        const links = document.querySelectorAll('nav a');
-        const sections = {
-            '#home': 'home',
-            '#prototypes': 'prototypes',
-            '#contact': 'contact'
-        };
+      const links = document.querySelectorAll("nav a");
+      const sections = {
+        "#home": "home",
+        "#prototypes": "prototypes",
+        "#contact": "contact",
+      };
 
-        links.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const sectionId = sections[link.getAttribute('href')];
+      links.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const sectionId = sections[link.getAttribute("href")];
 
-                document.querySelectorAll('main > div').forEach(div => {
-                    div.style.display = 'none';
-                });
+          document.querySelectorAll("main > div").forEach((div) => {
+            div.style.display = "none";
+          });
 
-                document.getElementById(sectionId).style.display = 'block';
-            });
+          document.getElementById(sectionId).style.display = "block";
         });
+      });
 
-        // Navigate to Home
-        function navigateToHome() {
-            document.querySelectorAll('main > div').forEach(div => {
-                div.style.display = 'none';
-            });
-            document.getElementById('home').style.display = 'block';
-        }
+      function navigateToHome() {
+        document.querySelectorAll("main > div").forEach((div) => {
+          div.style.display = "none";
+        });
+        document.getElementById("home").style.display = "block";
+      }
     </script>
-</body>
+  </body>
 </html>
