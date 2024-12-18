@@ -133,14 +133,9 @@ footer {
   }
 }
 
-video {
-  aspect-ratio: 16/9 !important;
-}
-
 @media (max-width: 1024px) {
   video {
     width: 700px;
-    height: 500px;
   }
 }
 
@@ -162,6 +157,5 @@ video {
 
   video {
     width: 400px;
-    height: 200px;
   }
 }
