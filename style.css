@@ -65,6 +65,11 @@ main {
   flex: 1;
 }
 
+#home {
+  display: flex;
+  justify-content: center;
+}
+
 footer {
   padding: 1em 0;
   background-color: #477ebf;
